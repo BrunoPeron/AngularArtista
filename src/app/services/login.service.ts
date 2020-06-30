@@ -62,7 +62,7 @@ export class LoginService {
     return (this.headers = new HttpHeaders()
       .set("Content-Type", "application/json")
       .set("Accept", "application/json")
-      // .append("Authorization", `Bearer ${this.getToken()}`)
+      .append("Authorization", `Bearer ${this.getToken()}`)
       );
   }
 
