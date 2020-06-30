@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from '../services/login.service';
-import { runInThisContext } from 'vm';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -8,7 +10,7 @@ import { runInThisContext } from 'vm';
 })
 export class LoginComponent implements OnInit {
   public login;
-  constructor(private loginService: LoginService) { }
+  constructor(private loginService: LoginService, private route: ActivatedRoute, private location: Location) { }
 
   ngOnInit(): void {
     this.login = {};

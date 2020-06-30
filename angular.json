@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "redmine"
+    }
+  },
+  "defaultProject": "redmine",
+  "cli": {
+    "analytics": false
+  }
 }
