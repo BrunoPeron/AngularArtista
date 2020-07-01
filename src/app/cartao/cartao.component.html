@@ -1,1 +1,25 @@
-<p>cartao works!</p>
+<div>
+  <label>Nr cartao:
+    <input [(ngModel)]="cartao.nrcartao" placeholder="nrCartao"/>
+  </label>
+  <label>tipo:
+    <input [(ngModel)]="cartao.tipo" placeholder="tipo"/>
+  </label>
+  <label>nome:
+    <input [(ngModel)]="cartao.nome" placeholder="nome"/>
+  </label>
+  <label>cpf:
+    <input [(ngModel)]="cartao.cpf" placeholder="cpf"/>
+  </label>
+  <label>descadd:
+    <input [(ngModel)]="cartao.descadd" placeholder="descadd"/>
+  </label>
+  <label>sobrenome:
+    <input [(ngModel)]="cartao.sobrenome" placeholder="sobrenome"/>
+  </label>
+  <label>validade:
+    <input [(ngModel)]="cartao.validade" placeholder="validade"/>
+  </label>
+
+  <button (click)="CartaoF()">cadastrar</button>
+</div>
