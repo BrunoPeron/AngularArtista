@@ -16,8 +16,11 @@ export class LoginComponent implements OnInit {
     this.login = {};
   }
 
+  getToken(){
+    return this.loginService.getToken();
+  }
+
   loginF(){
-    // console.log(this.login);
     // console.log(this.login.name);
     // console.log(this.login.senha);
     var data = {'client_id':this.login.name,
